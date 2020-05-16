@@ -1,0 +1,31 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+title: madoreenu
+---
+{% include head.html %}
+
+
+<body>
+<div class="menu">
+
+  <h2 class="phone">
+    申し訳ございませんが、当サイトはPC専用となっております。<br>レスポンシブ対応するまで気長にお待ちください><
+  </h2>
+<img src="/img/iconzen.jpg" class="icon">
+
+<h1 class="name">{{site.title}}</h1>
+{% include sns.html %}
+</div>
+<div class="right">
+{% include aboutme.html %}
+
+{% include skill.html %}
+
+{% include works.html %}
+
+{% include contact.html %}
+</div>
+</body>

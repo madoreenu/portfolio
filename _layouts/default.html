@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:200,300,400|Quicksand&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" type="image/jpg" href="{{site.url}}/img/favicon.ico" />
+    <meta name="description" content="{{site.description}}">
+    <meta property="og:url" content="{{site.url}}{{page.url}}" />
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    {% if page.title %}
+    <meta property="og:title" content="{{page.title}}" />
+    {% else %}
+    <meta property="og:title" content="{{site.title}}" />
+    {% endif %}
+  </head>
+  <body>
+  <div class="main">
+    {{content}}
+    </div>
+    {% include footer.html %}
+  </body>
+</html>
